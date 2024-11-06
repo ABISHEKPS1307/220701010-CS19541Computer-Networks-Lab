@@ -1,7 +1,6 @@
 import socket
 
 def start_tcp_client(host='127.0.0.1', port=65432):
-    # Create a TCP socket
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     client_socket.connect((host, port))
     
